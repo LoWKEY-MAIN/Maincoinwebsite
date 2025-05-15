@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maincoin (MNC)</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Maincoin Logo" class="logo"/>
+    <h1>Maincoin (MNC)</h1>
+    <p>Dein smarter ERC-20 Token mit Steuer, Cap, Burn & Mint!</p>
+
+    <div id="walletSection">
+      <button onclick="connectWallet()">Wallet verbinden</button>
+      <p id="walletAddress"></p>
+    </div>
+
+    <div id="balanceSection">
+      <h2>Dein MNC Kontostand:</h2>
+      <p id="tokenBalance">--</p>
+    </div>
+
+    <div id="burnSection">
+      <input type="number" id="burnAmount" placeholder="Menge eingeben"/>
+      <button onclick="burnTokens()">Burn</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
